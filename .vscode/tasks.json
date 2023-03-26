@@ -82,7 +82,7 @@
       "problemMatcher": []
     },
     {
-      "label": "Run tests for LinkedStackTest",
+      "label": "Run tests for LinkedQueueTest",
       "type": "shell",
       "command": "${config:ummBinaryPath}",
       "group": "test",
@@ -92,7 +92,7 @@
           "quoting": "escape"
         },
         {
-          "value": "DataStructures.LinkedStackTest",
+          "value": "DataStructures.LinkedQueueTest",
           "quoting": "escape"
         }
       ],
@@ -103,7 +103,7 @@
       "problemMatcher": []
     },
     {
-      "label": "Run specific test from LinkedStackTest",
+      "label": "Run specific test from LinkedQueueTest",
       "type": "shell",
       "command": "${config:ummBinaryPath}",
       "group": "test",
@@ -113,11 +113,11 @@
           "quoting": "escape"
         },
         {
-          "value": "DataStructures.LinkedStackTest",
+          "value": "DataStructures.LinkedQueueTest",
           "quoting": "escape"
         },
         {
-          "value": "${input:DataStructures.LinkedStackTest}",
+          "value": "${input:DataStructures.LinkedQueueTest}",
           "quoting": "escape"
         }
       ],
@@ -128,7 +128,7 @@
       "problemMatcher": []
     },
     {
-      "label": "Check LinkedStackTest",
+      "label": "Check LinkedQueueTest",
       "type": "shell",
       "command": "${config:ummBinaryPath}",
       "args": [
@@ -137,7 +137,7 @@
           "quoting": "escape"
         },
         {
-          "value": "DataStructures.LinkedStackTest",
+          "value": "DataStructures.LinkedQueueTest",
           "quoting": "escape"
         }
       ],
@@ -148,7 +148,7 @@
       "problemMatcher": []
     },
     {
-      "label": "Check JavaDoc for LinkedStackTest",
+      "label": "Check JavaDoc for LinkedQueueTest",
       "type": "shell",
       "command": "${config:ummBinaryPath}",
       "args": [
@@ -157,47 +157,7 @@
           "quoting": "escape"
         },
         {
-          "value": "DataStructures.LinkedStackTest",
-          "quoting": "escape"
-        }
-      ],
-      "dependsOn": [
-        "Set umm to be executable"
-      ],
-      "dependsOrder": "sequence",
-      "problemMatcher": []
-    },
-    {
-      "label": "Check StackOverflowException",
-      "type": "shell",
-      "command": "${config:ummBinaryPath}",
-      "args": [
-        {
-          "value": "check",
-          "quoting": "escape"
-        },
-        {
-          "value": "Exceptions.StackOverflowException",
-          "quoting": "escape"
-        }
-      ],
-      "dependsOn": [
-        "Set umm to be executable"
-      ],
-      "dependsOrder": "sequence",
-      "problemMatcher": []
-    },
-    {
-      "label": "Check JavaDoc for StackOverflowException",
-      "type": "shell",
-      "command": "${config:ummBinaryPath}",
-      "args": [
-        {
-          "value": "doc-check",
-          "quoting": "escape"
-        },
-        {
-          "value": "Exceptions.StackOverflowException",
+          "value": "DataStructures.LinkedQueueTest",
           "quoting": "escape"
         }
       ],
@@ -408,7 +368,7 @@
       "problemMatcher": []
     },
     {
-      "label": "Check LinkedList",
+      "label": "Check LinkedQueue",
       "type": "shell",
       "command": "${config:ummBinaryPath}",
       "args": [
@@ -417,7 +377,7 @@
           "quoting": "escape"
         },
         {
-          "value": "DataStructures.LinkedList",
+          "value": "DataStructures.LinkedQueue",
           "quoting": "escape"
         }
       ],
@@ -428,7 +388,7 @@
       "problemMatcher": []
     },
     {
-      "label": "Check JavaDoc for LinkedList",
+      "label": "Check JavaDoc for LinkedQueue",
       "type": "shell",
       "command": "${config:ummBinaryPath}",
       "args": [
@@ -437,7 +397,7 @@
           "quoting": "escape"
         },
         {
-          "value": "DataStructures.LinkedList",
+          "value": "DataStructures.LinkedQueue",
           "quoting": "escape"
         }
       ],
@@ -448,7 +408,7 @@
       "problemMatcher": []
     },
     {
-      "label": "Check StackADT",
+      "label": "Check QueueADT",
       "type": "shell",
       "command": "${config:ummBinaryPath}",
       "args": [
@@ -457,7 +417,7 @@
           "quoting": "escape"
         },
         {
-          "value": "ADTs.StackADT",
+          "value": "ADTs.QueueADT",
           "quoting": "escape"
         }
       ],
@@ -468,7 +428,7 @@
       "problemMatcher": []
     },
     {
-      "label": "Check JavaDoc for StackADT",
+      "label": "Check JavaDoc for QueueADT",
       "type": "shell",
       "command": "${config:ummBinaryPath}",
       "args": [
@@ -477,47 +437,7 @@
           "quoting": "escape"
         },
         {
-          "value": "ADTs.StackADT",
-          "quoting": "escape"
-        }
-      ],
-      "dependsOn": [
-        "Set umm to be executable"
-      ],
-      "dependsOrder": "sequence",
-      "problemMatcher": []
-    },
-    {
-      "label": "Check ListADT",
-      "type": "shell",
-      "command": "${config:ummBinaryPath}",
-      "args": [
-        {
-          "value": "check",
-          "quoting": "escape"
-        },
-        {
-          "value": "ADTs.ListADT",
-          "quoting": "escape"
-        }
-      ],
-      "dependsOn": [
-        "Set umm to be executable"
-      ],
-      "dependsOrder": "sequence",
-      "problemMatcher": []
-    },
-    {
-      "label": "Check JavaDoc for ListADT",
-      "type": "shell",
-      "command": "${config:ummBinaryPath}",
-      "args": [
-        {
-          "value": "doc-check",
-          "quoting": "escape"
-        },
-        {
-          "value": "ADTs.ListADT",
+          "value": "ADTs.QueueADT",
           "quoting": "escape"
         }
       ],
@@ -607,17 +527,17 @@
   "inputs": [
     {
       "type": "pickString",
-      "id": "DataStructures.LinkedStackTest",
+      "id": "DataStructures.LinkedQueueTest",
       "description": "Which test to run?",
       "options": [
-        "testLinkedStack",
+        "testLinkedQueue",
         "testIsEmpty",
         "testSize",
-        "testPush",
-        "testPop",
+        "testEnqueue",
+        "testDequeue",
         "testPeek"
       ],
-      "default": "testLinkedStack"
+      "default": "testLinkedQueue"
     },
     {
       "type": "pickString",
@@ -634,13 +554,13 @@
         "\"16L. Implementing LinkedLists\"",
         "\"Extra Credit: ShoppingList\"",
         "\"Extra Credit: WorkAheadQueue\"",
-        "\"Implementing LinkedStack\"",
-        "\"Implementing LinkedQueue\"",
+        "\"17L. Implementing LinkedStack\"",
         "\"8L. Writing Junit tests - Part 2 - Student Class\"",
         "\"8L. Writing Junit tests - Part 2 - CoOrds Class\"",
         "\"5L. Writing JUnit tests - Part 1\"",
         "\"Project: Round Robin Scheduler\"",
-        "\"Project: ShoppingList - Unit Tests\""
+        "\"Project: ShoppingList - Unit Tests\"",
+        "\"18L. Implementing LinkedQueue\""
       ],
       "default": "\"Project: Pyramid Scheme\""
     }
